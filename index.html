@@ -23,7 +23,7 @@
     </div>
 
     <div class="container text-center my-5">
-        <form onsubmit="return checkIfLeapYear()">
+        <form onsubmit="return checkIfLeapYear(event)">
             <h2>Exercise 2</h2>
             <label>Check if year is leap:</label>
             <input type="text" id="check-leap" name="check-leap">
@@ -40,15 +40,17 @@
     </div>
 
     <div class="container text-center my-5">
-        <form onsubmit="return ">
+        <form onsubmit="mathOperation(event)">
             <h2>Exercise 4</h2>
-            <label>Add number 1: </label>
+            <label for="num-1">Add number 1: </label>
             <input type="text" id="num-1" name="num-1">
-            <label>Add number 2:</label>
-            <input type="text" id="num-1" name="num-2">
-            <input type="submit">
+            <label for="num-2">Add number 2:</label>
+            <input type="text" id="num-2" name="num-2"><br>
+            <button type="submit" id="multiply-operation">Multiply</button>
+            <button type="submit" id="divide-operation">Divide</button>
         </form>
-        <p id="leap-boolean"></p>
+        <p id="math-result"></p>
+
     </div>
 
 </body>

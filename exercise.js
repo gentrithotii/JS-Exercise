@@ -11,7 +11,7 @@ function displayCurrentDate() {
   document.getElementById("currentDateTime").innerHTML = formatedDate;
 }
 
-function checkIfLeapYear() {
+function checkIfLeapYear(event) {
   event.preventDefault();
   let num = parseInt(document.getElementById("check-leap").value);
   // console.log("Entered number: " + num);
@@ -48,6 +48,40 @@ function checkIfSundayBetweenYears() {
       document.getElementById("date-between").innerHTML = date;
     }
   }
+}
+
+const operators = [" *", "/"];
+
+function multiplyOperation(firstNum, secondNum) {
+  return firstNum * secondNum;
+}
+
+function divisionOperation(firstNum, secondNum) {
+  if (secondNum === 0) {
+    throw new Error("Cant divide by 0 1");
+  }
+  console.log(firstNum + secondNum);
+  return firstNum / secondNum;
+}
+
+function mathOperation(event) {
+  event.preventDefault();
+
+  const firstNum = parseInt(document.getElementById("num-1").value);
+  const secondNum = parseInt(document.getElementById("num-2").value);
+  let result;
+
+  const clickedButtonId = event.submitter.id;
+
+  if (clickedButtonId === "multiply-operation") {
+    console.log("Multiplication");
+    result = multiplyOperation(firstNum, secondNum);
+  } else if (clickedButtonId === "divide-operation") {
+    console.log("Division");
+    result = divisionOperation(firstNum, secondNum);
+  }
+
+  document.getElementById("math-result").innerHTML = "Result is: " + result;
 }
 
 checkIfSundayBetweenYears();
