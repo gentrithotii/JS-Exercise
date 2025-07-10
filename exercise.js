@@ -45,7 +45,7 @@ function checkIfSundayBetweenYears() {
     date.setFullYear(date.getFullYear() + 1);
     if (date.getMonth() === 0 && days[date.getDay()] === "Sunday") {
       // console.log("Date between: " + date);
-      document.getElementById("date-between").innerHTML = date;
+      document.getElementById("date-between").innerHTML = date.toLocaleString();
     }
   }
 }
