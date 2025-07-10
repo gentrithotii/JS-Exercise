@@ -53,6 +53,22 @@
 
     </div>
 
+    <div class="container text-center">
+        <h2>Exercise 5</h2>
+        <form onsubmit="heatConvertion(event)">
+            <label for="cf-number">Add numbre to convert from: </label>
+            <input type="text" id="cf-number" name="cf-number" value=""><br>
+
+            <label for="celsius-fahrenheit">C to F: </label>
+            <input type="radio" id="c-f" name="temperature-convertion" value="C-F"><br>
+            <label for="fahrenheit-celsius">F to C: </label>
+            <input type="radio" id="f-c" name="temperature-convertion" value="F-C"><br>
+            <button type="submit">Submit</button>
+
+        </form>
+
+        <p id="cf-convert-result"></p>
+    </div>
 </body>
 
 </html>

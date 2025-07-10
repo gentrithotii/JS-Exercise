@@ -82,6 +82,31 @@ function mathOperation(event) {
   document.getElementById("math-result").innerHTML = "Result is: " + result;
 }
 
+function celsiusToFahrenheit(celsius) {
+  return (celsius * 9) / 5 + 32;
+}
+function fahrenheitToCelsius(fahrenheit) {
+  return ((fahrenheit - 32) * 5) / 9;
+}
+function heatConvertion(event) {
+  event.preventDefault();
+
+  const getNumber = parseFloat(document.getElementById("cf-number").value);
+
+  console.log("Entered number: ", getNumber);
+
+  let result;
+
+  if (document.getElementById("c-f").checked) {
+    result = celsiusToFahrenheit(getNumber);
+  } else if (document.getElementById("f-c").checked) {
+    result = fahrenheitToCelsius(getNumber);
+  }
+
+  document.getElementById("cf-convert-result").innerHTML =
+    "Result is: " + result;
+}
+
 checkIfSundayBetweenYears();
 displayCurrentDate();
 checkIfLeapYear();
