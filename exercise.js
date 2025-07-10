@@ -50,8 +50,6 @@ function checkIfSundayBetweenYears() {
   }
 }
 
-const operators = [" *", "/"];
-
 function multiplyOperation(firstNum, secondNum) {
   return firstNum * secondNum;
 }
