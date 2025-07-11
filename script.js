@@ -69,3 +69,9 @@ console.log(filterOutEvenNumbers(arrayNumsTwo));
 //Exercise 12
 
 console.log(arrayNums.map((num) => num * num));
+
+//Exercise 13
+
+const person = { name: "Gentrit", age: 30, adress: "Storavagen" };
+
+console.log(person);
