@@ -30,7 +30,7 @@ function addAllArrayNums(arrayOfNums) {
   return sum;
 }
 
-const arrayNums = [2, 2, 6, 12];
+const arrayNums = [2, 32, 6, 12];
 console.log("All added upp: ", addAllArrayNums(arrayNums));
 
 //Exercise 9
@@ -48,4 +48,24 @@ function largestElementInArray(arrayNums) {
 
 console.log(largestElementInArray(arrayNums));
 
+let arrayNumsTwo = [1, 53, 23, 64, 313, 272, 4, 17, 22, 6, 8, 81, 123, 5742, 2];
+
 //Exercise 10
+function filterOutEvenNumbers(arrayNums) {
+  let evenNumbers = [];
+  for (let nums of arrayNums) {
+    if (nums % 2 === 0) {
+      evenNumbers.push(nums);
+    }
+  }
+
+  return evenNumbers;
+}
+
+console.log(filterOutEvenNumbers(arrayNumsTwo));
+
+//Exercise 11 same as 10
+
+//Exercise 12
+
+console.log(arrayNums.map((num) => num * num));
