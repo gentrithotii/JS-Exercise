@@ -32,3 +32,20 @@ function addAllArrayNums(arrayOfNums) {
 
 const arrayNums = [2, 2, 6, 12];
 console.log("All added upp: ", addAllArrayNums(arrayNums));
+
+//Exercise 9
+function largestElementInArray(arrayNums) {
+  let biggestNumber = 0;
+
+  for (let nums of arrayNums) {
+    if (nums > biggestNumber) {
+      biggestNumber = nums;
+    }
+  }
+
+  return biggestNumber;
+}
+
+console.log(largestElementInArray(arrayNums));
+
+//Exercise 10
