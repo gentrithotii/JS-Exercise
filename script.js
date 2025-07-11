@@ -12,3 +12,23 @@ function removeLetterAtGivenIndex(text, position) {
 }
 
 console.log(removeLetterAtGivenIndex("Gentrit", 2));
+
+//Exercise 7
+function reverseString(text) {
+  return text.split("").reverse().join("");
+}
+
+console.log(reverseString("Gentrit"));
+
+//Exercise 8
+function addAllArrayNums(arrayOfNums) {
+  let sum = 0;
+  for (let nums of arrayOfNums) {
+    sum += nums;
+  }
+
+  return sum;
+}
+
+const arrayNums = [2, 2, 6, 12];
+console.log("All added upp: ", addAllArrayNums(arrayNums));
