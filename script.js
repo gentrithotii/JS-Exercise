@@ -98,3 +98,18 @@ person = addPropertyToObject(person, "number");
 
 person = removePorpertyFromObject(person, "age");
 console.log(person);
+
+//Exercise 16
+
+const personOne = {
+  name: "Gentrit",
+  age: 30,
+  adress: {
+    street: "Road three",
+    zip: "56234",
+    city: "Big city",
+  },
+  height: 175,
+};
+
+console.log(personOne);
