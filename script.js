@@ -75,3 +75,12 @@ console.log(arrayNums.map((num) => num * num));
 const person = { name: "Gentrit", age: 30, adress: "Storavagen" };
 
 console.log(person);
+
+//Exercise 14
+function getPropertyValue(obj, propName) {
+  return obj[propName];
+}
+
+console.log(getPropertyValue(person, "adress"));
+
+//Exercise 15
