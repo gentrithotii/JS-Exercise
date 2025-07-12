@@ -72,7 +72,7 @@ console.log(arrayNums.map((num) => num * num));
 
 //Exercise 13
 
-const person = { name: "Gentrit", age: 30, adress: "Storavagen" };
+let person = { name: "Gentrit", age: 30, adress: "Storavagen" };
 
 console.log(person);
 
@@ -84,3 +84,17 @@ function getPropertyValue(obj, propName) {
 console.log(getPropertyValue(person, "adress"));
 
 //Exercise 15
+function addPropertyToObject(obj, propName) {
+  let newObj = { ...obj, propName };
+  return newObj;
+}
+
+function removePorpertyFromObject(obj, propName) {
+  delete obj[propName];
+  return obj;
+}
+
+person = addPropertyToObject(person, "number");
+
+person = removePorpertyFromObject(person, "age");
+console.log(person);
