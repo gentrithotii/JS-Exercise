@@ -135,3 +135,24 @@ const filteredEntiries = entriesArray.filter(([key, value]) => {
 });
 
 console.log(filteredEntiries);
+
+//Exercise 18
+
+function mergeTwoObjects(obj1, obj2) {
+  return (mergedObject = { ...obj1, ...obj2 });
+}
+
+const personTest = {
+  name: "Sabitus",
+  age: 33,
+};
+
+const adress = {
+  street: "Road 1",
+  zip: "56234",
+  city: "City",
+};
+
+const combined = mergeTwoObjects(personTest, adress);
+
+console.log(combined);
