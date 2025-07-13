@@ -121,6 +121,24 @@ function removeLetterAtGivenIndex(text, position) {
 
 console.log(removeLetterAtGivenIndex("Gentrit", 2));
 
+//Exercise 19 and 20
+
+function returnFormfNameAndLName(event) {
+  event.preventDefault();
+
+  const firstName = document.getElementById("first-name").value;
+  const lastName = document.getElementById("last-name").value;
+
+  console.log("Test");
+
+  document.getElementById("full-name-display").innerHTML =
+    "Full name is: " + firstName + " " + lastName;
+}
+
+function changeParagraphColor() {
+  document.getElementById("full-name-display").style.backgroundColor = "Orange";
+}
+
 checkIfSundayBetweenYears();
 displayCurrentDate();
 checkIfLeapYear();
