@@ -139,6 +139,17 @@ function changeParagraphColor() {
   document.getElementById("full-name-display").style.backgroundColor = "Orange";
 }
 
+//Exercise 21
+
+function insert_Row() {
+  const table = document.getElementById("table-example");
+  let row = table.insertRow(1);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+
+  cell1.innerHTML = "Gentrit";
+  cell2.innerHTML = "Hoti";
+}
 checkIfSundayBetweenYears();
 displayCurrentDate();
 checkIfLeapYear();
